@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Digital Clock Using HTML CSS and JavaScript</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">Digital Clock</h1>
+
+    <div id="time">
+
+        <!-- Hours -->
+        <div class="circle" style="--clr:#ff2972;">
+
+            <svg>
+                <circle cx="90" cy="90" r="70"></circle>
+                <circle cx="90" cy="90" r="70" id="hh"></circle>
+            </svg>
+
+            <div class="dots h_dot"></div>
+
+            <div class="time-text" id="hours">
+                00
+                <span>Hours</span>
+            </div>
+
+        </div>
+
+        <!-- Minutes -->
+        <div class="circle" style="--clr:#fee800;">
+
+            <svg>
+                <circle cx="90" cy="90" r="70"></circle>
+                <circle cx="90" cy="90" r="70" id="mm"></circle>
+            </svg>
+
+            <div class="dots m_dot"></div>
+
+            <div class="time-text" id="minutes">
+                00
+                <span>Minutes</span>
+            </div>
+
+        </div>
+
+        <!-- Seconds -->
+        <div class="circle" style="--clr:#04fc43;">
+
+            <svg>
+                <circle cx="90" cy="90" r="70"></circle>
+                <circle cx="90" cy="90" r="70" id="ss"></circle>
+            </svg>
+
+            <div class="dots s_dot"></div>
+
+            <div class="time-text" id="seconds">
+                00
+                <span>Seconds</span>
+            </div>
+
+        </div>
+
+        <div class="ap">
+            <div id="ampm">AM</div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
